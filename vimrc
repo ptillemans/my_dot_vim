@@ -14,6 +14,10 @@ Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-fugitive'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'altercation/vim-colors-solarized.git'
+Bundle 'kevinw/pyflakes-vim'
+Bundle 'ervandew/supertab'
+Bundle 'tpope/vim-fugitive'
+Bundle 'majutsushi/tagbar'
 " vim-scripts repos
 Bundle 'L9'
 Bundle 'FuzzyFinder'
@@ -32,8 +36,8 @@ filetype plugin indent on  	" required!
 " NOTE: comments after Bundle command are not allowed.
 
 " set solarized theme
-set t_Co=256                        " force vim to use 256 colors
-let g:solarized_termcolors=256      " use solarized 256 fallback
+set t_Co=16                          " force vim to use 256 colors
+"let g:solarized_termcolors=256      " use solarized 256 fallback
 syntax enable
 set background=dark
 colorscheme solarized
