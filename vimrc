@@ -36,8 +36,7 @@ filetype plugin indent on  	" required!
 " NOTE: comments after Bundle command are not allowed.
 
 " set solarized theme
-set t_Co=16                          " force vim to use 256 colors
-"let g:solarized_termcolors=256      " use solarized 256 fallback
+set t_Co=16                          " force vim to use 16 colors
 syntax enable
 set background=dark
 colorscheme solarized
@@ -45,4 +44,10 @@ colorscheme solarized
 " Highlight searches (use <C-L> to temporarily turn off highlighting; see the
 " mapping of <C-L> below)
 set hlsearch
+
+" Set tabwidt of 4 with spaces, no tabs, show tabs ans eol
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
 
