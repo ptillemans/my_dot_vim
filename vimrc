@@ -21,7 +21,8 @@ Bundle 'majutsushi/tagbar'
 " vim-scripts repos
 Bundle 'L9'
 Bundle 'FuzzyFinder'
-
+Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+Bundle 'vim-scripts/VimClojure'
 
 filetype plugin indent on  	" required!
 
@@ -36,7 +37,7 @@ filetype plugin indent on  	" required!
 " NOTE: comments after Bundle command are not allowed.
 
 " set solarized theme
-set t_Co=16                          " force vim to use 16 colors
+set t_Co=256                         " force vim to use 16 colors
 syntax enable
 set background=dark
 colorscheme solarized
@@ -51,3 +52,14 @@ set softtabstop=4
 set shiftwidth=4
 set expandtab
 
+" Set powerline options
+set guifont=Source\ Code\ Pro\ for\ Powerline:h12
+set laststatus=2
+let g:Powerline_symbols='fancy'
+set encoding=utf-8
+set fillchars+=stl:\ ,stlnc:\ 
+ 
+" vimclojure options
+let g:vimclojure#WantNailGun = 1
+let g:vimclojure#HighlightBuiltins = 1
+let g:vimclojure#ParenRainbow = 1
