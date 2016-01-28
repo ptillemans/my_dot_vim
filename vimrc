@@ -1,12 +1,12 @@
 set nocompatible		" be iMproved
 filetype off			" required!
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim/
+call vundle#begin()
 
 " Let Vundle manage Vundle
 " required!
-Bundle 'gmarik/vundle'
+Bundle 'VundleVim/Vundle.vim'
 
 " My bundles here:
 "
@@ -16,25 +16,28 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'altercation/vim-colors-solarized.git'
 Bundle 'kevinw/pyflakes-vim'
 Bundle 'ervandew/supertab'
-Bundle 'tpope/vim-fugitive'
 Bundle 'majutsushi/tagbar'
 " vim-scripts repos
 Bundle 'L9'
 Bundle 'FuzzyFinder'
-Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+Bundle 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 Bundle 'vim-scripts/VimClojure'
 
+call vundle#end()
 filetype plugin indent on  	" required!
-
-"
-" Brief help
-" :BundleList          - list configured bundles
-" :BundleInstall(!)    - install(update) bundles
-" :BundleSearch(!) foo - search(or refresh cache first) for foo
-" :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
-"
-" see :h vundle for more details or wiki for FAQ
-" NOTE: comments after Bundle command are not allowed.
+" To ignore plugin indent changes, instead use:
+" "filetype plugin on
+" "
+" " Brief help
+" " :PluginList       - lists configured plugins
+" " :PluginInstall    - installs plugins; append `!` to update or just
+" :PluginUpdate
+" " :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" " :PluginClean      - confirms removal of unused plugins; append `!` to
+" auto-approve removal
+" "
+" " see :h vundle for more details or wiki for FAQ
+" " Put your non-Plugin stuff after this line
 
 " set solarized theme
 set t_Co=256                         " force vim to use 16 colors
